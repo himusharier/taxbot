@@ -25,7 +25,7 @@
             
 <?php
                                         
- $con = mysqli_connect("localhost","root","","xylem")or die("cannot connect database server.");
+ $con = mysqli_connect("localhost","root","","taxbot_main_database")or die("cannot connect database server.");
      
 $results_per_page = 14; // number of results per page
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };

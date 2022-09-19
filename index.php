@@ -1,5 +1,5 @@
 <?php
-session_start () ;
+session_start();
 
 unset($_SESSION["searchid"]);
 
@@ -7,7 +7,7 @@ unset($_SESSION["searchid"]);
 if(isset($_GET['id'])){
     $getid = $_GET['id'];
     $_SESSION['upid'] = $getid;
-unset($_SESSION["hidden"]);
+	$_SESSION["hidden"] = "";
 }
 else {
     $_SESSION['upid'] = "0";
@@ -18,7 +18,7 @@ else {
  
 $vgetid = $_SESSION['upid'];
 
-$con = mysqli_connect("localhost","root","","xylem")or die("cannot connect database server.");
+$con = mysqli_connect("localhost","root","","taxbot_main_database")or die("cannot connect database server.");
 $sql="SELECT * FROM testdata WHERE pid=$vgetid";
 
 $result=mysqli_query($con, $sql);
@@ -34,7 +34,6 @@ while($rows=mysqli_fetch_array($result)){
 <html>
     <head>
         <title>Home page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
         
         <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
@@ -91,10 +90,10 @@ if ($('input#faq_search_input').hasClass("loading")) {
         </div>
                 <div class="top">
                     <a class="stay_on" href="index.php">Home</a>
-                    <a class="top_text" href="#">Catagory</a>
+                    <a class="top_text" href="https://drive.google.com/file/d/1XAl9qc-IIi_XyBSJrbPGrPVymKd15r1O/view?usp=sharing" target="_blank">Download</a>
                     <a class="top_text" href="pages/login.php">Login</a>
                     <a class="top_text" href="pages/about.php">About</a>
-                    <a class="top_text" href="api/">API</a>
+                    <a class="top_text" href="api/" target="_blank">API</a>
                 </div>
         
         <div id="main_container">
@@ -116,7 +115,7 @@ if ($('input#faq_search_input').hasClass("loading")) {
             
             <?php
         
-        $con2 = mysqli_connect("localhost","root","","xylem")or die("cannot connect database server.");
+        $con2 = mysqli_connect("localhost","root","","taxbot_main_database")or die("cannot connect database server.");
 $sql2="SELECT * FROM upimg WHERE pid=$vgetid";
 
 $result2 = mysqli_query($con2, $sql2);

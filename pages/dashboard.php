@@ -18,7 +18,7 @@ else
 }
 
 
-$conc = mysqli_connect("localhost","root","","xylem")or die("cannot connect database server.");
+$conc = mysqli_connect("localhost","root","","taxbot_main_database")or die("cannot connect database server.");
 $sqlc="SELECT pid FROM testdata";
 
 $resultc = mysqli_query($conc, $sqlc);

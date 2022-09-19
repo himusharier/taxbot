@@ -2,7 +2,7 @@
 session_start();
 
 
-$db = mysqli_connect("localhost", "root", "", "xylem");
+$db = mysqli_connect("localhost", "root", "", "taxbot_main_database");
 
 
 if(isset($_POST['subbutton']))

@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 
-  $db = mysqli_connect("localhost", "root", "", "xylem");  
+  $db = mysqli_connect("localhost", "root", "", "taxbot_main_database");  
 
 	$id = $_REQUEST['id'];
     $pid = $_SESSION['pid'];

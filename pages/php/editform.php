@@ -3,7 +3,7 @@ session_start();
 
         $pid = $_SESSION['pid'];
 
-$db = mysqli_connect("localhost", "root", "", "xylem");
+$db = mysqli_connect("localhost", "root", "", "taxbot_main_database");
 
 $sql = "SELECT * FROM testdata WHERE pid = '$pid'";
         $result = mysqli_query($db, $sql);

@@ -10,7 +10,7 @@ if(!$_POST["passcode"])
 
 elseif (!empty($_POST['passcode'])) 
 {
-	$db = mysqli_connect("localhost", "root", "", "xylem");
+	$db = mysqli_connect("localhost", "root", "", "taxbot_main_database");
  
     $password = mysqli_real_escape_string($db, $_POST['passcode']); 
 

@@ -4,7 +4,7 @@
 DEFINE('DATABASE_USER', 'root');
 DEFINE('DATABASE_PASSWORD', '');
 DEFINE('DATABASE_HOST', 'localhost');
-DEFINE('DATABASE_NAME', 'xylem');
+DEFINE('DATABASE_NAME', 'taxbot_main_database');
 
 
 

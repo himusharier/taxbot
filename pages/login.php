@@ -32,10 +32,10 @@ else
         
                 <div class="top">
                     <a class="top_text" href="../index.php">Home</a>
-                    <a class="top_text" href="#">Catagory</a>
+                    <a class="top_text" href="https://drive.google.com/file/d/1XAl9qc-IIi_XyBSJrbPGrPVymKd15r1O/view?usp=sharing" target="_blank">Download</a>
                     <a class="stay_on" href="login.php">Login</a>
                     <a class="top_text" href="about.php">About</a>
-                    <a class="top_text" href="../api/">API</a>
+                    <a class="top_text" href="../api/" target="_blank">API</a>
                 </div>
         
         <div id="main_container">

@@ -40,7 +40,7 @@ else {
 
 $vgetid = $_SESSION['pid'];
 
-$con = mysqli_connect("localhost","root","","xylem")or die("cannot connect database server.");
+$con = mysqli_connect("localhost","root","","taxbot_main_database")or die("cannot connect database server.");
 $sql="SELECT * FROM testdata WHERE pid=$vgetid";
 
 $result = mysqli_query($con, $sql);
